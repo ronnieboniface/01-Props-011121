@@ -23,6 +23,7 @@
 ### **Creating a React project**
 * `npx create-react-app <project-name>`
 * You may see labs or older resources online telling you to use this command:  `npm install -g create-react-app`. You shouldn't need to if you have more recent versions of node installed.
+* `npm start` or `yarn start` to start live server.
 
 ### **React Project Structure**
 

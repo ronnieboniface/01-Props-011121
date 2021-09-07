@@ -27,7 +27,7 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div class="characters">
       {/* <SailorMoon name="Mercury" color="orange" />
       <SailorMoon name="Venus" color="pink" /> */}
 
