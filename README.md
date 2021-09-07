@@ -62,16 +62,25 @@
   &nbsp; 
   &nbsp; 
 
-  ![Common React Layout](./readme-img/components2.jpeg)
+  ![Common React Layout](/readme-img/components2.jpeg)
 
   &nbsp; 
 
-  ![React Component Examples](./readme-img/components.png)
+  ![React Component Examples](/readme-img/components.png)
+
+  &nbsp;
+
   * Class Components
   * Functional Components
   * Container Components
 
 ### **Props**
+  &nbsp;
+
+  ![React Props Meme](/readme-img/props-brr.png)
+
+  &nbsp;
+
   * Short for properties
   * Built-in object that stores the value of a tag's attribute (similar to HTML attributes).
   * Provides a way to pass data from one component to another. (Similar to arguments in a function)
