@@ -1,12 +1,16 @@
 import React from 'react';
+import Header from './components/Header';
 import SailorMoon from './components/SailorMoon';
 
-const App = () => {
-  // A really great use for default props is with images
-  App.defaultProps = {
-    name: 'Moon', 
-    color: 'red'
-  };
+// Ways to define Functional Component
+function App(){
+// const App = () => {
+
+  // Good idea to have default props when you're working with fetch requests.
+  // SailorMoon.defaultProps = {
+  //   name: 'Moon', 
+  //   color: 'red'
+  // };
   
   const propsArray = [
     { name: 'Moon', color: 'red'},
@@ -27,21 +31,28 @@ const App = () => {
   };
 
   return (
-    <div class="characters">
-      {/* <SailorMoon name="Mercury" color="orange" />
-      <SailorMoon name="Venus" color="pink" /> */}
+    <div className="characters">
+      <Header />
+      {/* // Hardcoded Props */}
+      {/* 
+        <SailorMoon name="Mercury" color="orange" />
+        <SailorMoon name="Venus" color="pink" /> 
+      */}
 
-      {/* This is technically what we're doing:
-        This is not applicable when we're using class components */}
+      {/* // Will use default props */}      
+      {/* <SailorMoon />  */}
 
-      {/* {SailorMoon({name: "Masked Tuxedo", color: "black"})} */}
 
-      {/* This is just to show abstraction. We'll never write it this way. */}
-      {/* { new SailorMoon({name: 'Masked Tuxedo', color: 'black'}).render() } */}
+      {/* // This is just to show abstraction. We'll never write it this way. */}
+      {/*  
+        { new SailorMoon({name: 'Pluto', color: 'darkgreen'}).render() }
+      */}
 
-      {/* {propsArray.map(object => {
-        return <SailorMoon name={object.name} color={object.color} key={object.name} />
-      })} */}
+      {/* 
+        {propsArray.map(object => {
+          return <SailorMoon name={object.name} color={object.color} key={object.name} />
+        })} 
+      */}
 
       {renderSailors()}
     </div>

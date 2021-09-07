@@ -1,11 +1,11 @@
 import React from 'react';
 
-// Functional Component
-// const SailorMoon = ({ info }) => {
-//   const { planet, color } = info;
+// Functional Components
+
+// const SailorMoon = (props) => {
 //   return (
 //     <div>
-//       <h1 style={{color: color}}>Hello, {planet}!</h1>
+//       <h1 style={{color: props.color}}>Hello, Sailor {props.name}!</h1>
 //     </div>
 //   );
 // };
@@ -13,18 +13,26 @@ import React from 'react';
 // const SailorMoon = (props) => {
 //   const { name, color } = props;
 //   return (
-    // <div>
-    //   <h1 style={{color: color}}>Hello, Sailor {name}!</h1>
-    // </div>
+//     <div>
+//       <h1 style={{color: color}}>Hello, Sailor {name}!</h1>
+//     </div>
+//   );
+// };
+
+// const SailorMoon = ({ name, color }) => {
+//   return (
+//     <div>
+//       <h1 style={{color: color}}>Hello, {name}!</h1>
+//     </div>
 //   );
 // };
 
 
 // Class Component
 class SailorMoon extends React.Component {
-  constructor(props) {
-    super(props);
-  };
+  // constructor(props) {
+  //   super(props);
+  // };
 
   // static defaultProps = {
   //   name: 'Sailor Moon',
@@ -32,6 +40,7 @@ class SailorMoon extends React.Component {
   // };
 
   render(){
+    // console.log(this)
     return (
       <div>
         <h1 style={{color: this.props.color}}>Hello, Sailor {this.props.name}!</h1>
@@ -40,9 +49,5 @@ class SailorMoon extends React.Component {
   };
 };
 
-// Header.defaultProps = {
-//   name: 'Sailor Moon', 
-//   color: 'red'
-// };
 
 export default SailorMoon;
