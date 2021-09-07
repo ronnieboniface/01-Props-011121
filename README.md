@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# Intro to React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### **What is React?**
+> React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”. ([Reactjs.org](https://reactjs.org/tutorial/tutorial.html))
 
-## Available Scripts
+* React is a library written with JavaScript. It is designed to make writing JavaScript clean and efficient.
 
-In the project directory, you can run:
+### **Some React Features**
+* Virtual DOM
+* Components
+* Auto-Refresh/Live Server
+* Imports
 
-### `yarn start`
+### **VSCode Extensions**
+  * JS JSX Snippets
+  * Simple React Snippets
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### **Debugging**
+  * You'll continue to use `console.log` and `debugger`, but there are some additional tools.
+  * React Developer Tools
+  * Redux Developer Tools
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### **Creating a React project**
+* `npx create-react-app <project-name>`
+* You may see labs or older resources online telling you to use this command:  `npm install -g create-react-app`. You shouldn't need to if you have more recent versions of node installed.
 
-### `yarn test`
+### **React Project Structure**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+&nbsp; 
 
-### `yarn build`
+![React App Project Structure](./structure.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+&nbsp; 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* `public`
+  - We do very little work in this folder. We would maybe edit the `head` section of `index.html`.
+* `src`
+  - This is where our project lives.
+  - Some freedom with the organization of files/folders.
+  - `create-react-app` gives us some files we won't be using, it's okay to delete them. Just make sure to clean up anywhere there are imports for those files.
+  - `index.js` sets up our virtual DOM.
+  - `app.js` is usually our root page, but it does not have to be.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### **package.json, node_modules, Babel & Webpack**
+  * `package.json` is kind of like our `Gemfile` in Ruby. We can add extra tools to our project with packages.
+    - `npm install` or `yarn install` create `package-lock.json` and `yarn.lock` respectively.
+  * `node_modules` is where the code for all of those packages exist.
+  * Babel is a package that converts all of our JSX into code that is compatible with any browser.
+  * Webpack bundles all of our files together. It minifies some of them, shrinks file sizes and makes our project more digestible for the browser.
 
-### `yarn eject`
+### **JSX - JavaScript Extension Syntax**
+  * Used to easily write JavaScript and HTML together.
+  * It LOOKS like HTML, but it is not. (Think back to our `.erb` files in Sinatra & Rails.)
+  * Allows us to write JS code directly inside of our "HTML".
+  * With JSX, EVERY HTML tag needs a closing tag (i.e. `<input />`, `<img />`).
+  * Everything needs to be grouped inside of 1 tag. 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### **Components**
+  * Independent and reusable bits of code (kind of like functions!)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  &nbsp; 
+  &nbsp; 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+  ![Common React Layout](./components2.jpeg)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+  &nbsp; 
 
-## Learn More
+  ![React Component Examples](./components.png)
+  * Class Components
+  * Functional Components
+  * Container Components
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### **Props**
+  * Short for properties
+  * Built-in object that stores the value of a tag's attribute (similar to HTML attributes).
+  * Provides a way to pass data from one component to another. (Similar to arguments in a function)
+  * Cannot be changed or updated in the child component.
+  * Props cannot be passed from child to parent.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### **Resources**
+  * [React Documentation](https://reactjs.org/)
+  * [npmjs.com](https://www.npmjs.com/)
+  * [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
+  * [Redux Developer Tools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en)
