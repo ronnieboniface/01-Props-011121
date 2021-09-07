@@ -29,7 +29,7 @@
 
 &nbsp; 
 
-![React App Project Structure](./structure.png)
+![React App Project Structure](./readme-img/structure.png)
 
 &nbsp; 
 
@@ -62,11 +62,11 @@
   &nbsp; 
   &nbsp; 
 
-  ![Common React Layout](./components2.jpeg)
+  ![Common React Layout](./readme-img/components2.jpeg)
 
   &nbsp; 
 
-  ![React Component Examples](./components.png)
+  ![React Component Examples](./readme-img/components.png)
   * Class Components
   * Functional Components
   * Container Components

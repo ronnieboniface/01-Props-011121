@@ -1,5 +1,5 @@
 import React from 'react';
-import SailorMoon from './components/layout/SailorMoon';
+import SailorMoon from './components/SailorMoon';
 
 const App = () => {
   // A really great use for default props is with images

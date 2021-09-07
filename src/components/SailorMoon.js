@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Functional Component
 // const SailorMoon = ({ info }) => {
 //   const { planet, color } = info;
 //   return (
@@ -19,6 +20,7 @@ import React from 'react';
 // };
 
 
+// Class Component
 class SailorMoon extends React.Component {
   constructor(props) {
     super(props);
