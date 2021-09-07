@@ -62,11 +62,11 @@
   &nbsp; 
   &nbsp; 
 
-  ![Common React Layout](/readme-img/components2.jpeg)
+  ![Common React Layout](readme-img/components2.jpeg)
 
   &nbsp; 
 
-  ![React Component Examples](/readme-img/components.png)
+  ![React Component Examples](readme-img/components.png)
 
   &nbsp;
 
@@ -77,7 +77,7 @@
 ### **Props**
   &nbsp;
 
-  ![React Props Meme](/readme-img/props-brr.png)
+  ![React Props Meme](readme-img/props-brr.png)
 
   &nbsp;
 
